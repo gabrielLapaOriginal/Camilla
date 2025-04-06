@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "valentine";
+  src: local("valentine"),
+    url("./fonts/valentine.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'relogio'; 
+  src: url('./fonts/digital-7.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "valentine";
+  overflow-x: hidden; 
+  overflow-y: hidden ;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(218, 137, 255, 0.8);
+  box-shadow: 0 0 10px 3px rgba(218, 137, 255);
+  text-align: center;
+  border-radius: 20px;
+  position: relative; 
+}
+.box h1 {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.box p {
+  padding: 10px;
+}
+.button-group {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+button {
+  position: absolute;
+  height: inherit;
+  width: 60px;
+  border-radius: 10px;
+  border-style: none;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(255, 95, 220);
+  box-shadow: 0 0 10px 3px rgb(174, 0, 255);
+}
+.box #sim {
+  margin-left: -100px;
+}
+button:hover {
+  cursor: pointer;
+}
+.box #nao{
+  margin-right: -100px;
+}
+
+
+img{
+  width: 300px;  
+  height: auto;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_btn{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.img_btn.left {
+  left: 10px; 
+
+}
+
+.img_btn.right {
+  right: 10px; 
+}
+.btn_clock{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.relogio{
+  font-family: relogio;
+  font-size: 25px;
+}
